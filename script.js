@@ -7,8 +7,16 @@ function limpar(){
     document.getElementById('appear').innerHTML = ''
 }
 
-function calcular(){
+function apagar(){
+    var resultado = document.getElementById('appear').innerHTML
+    document.getElementById('appear').innerHTML = resultado.substring(0, resultado.length -1)
+}
 
+function calcular(){
+    var resultado = document.getElementById('appear').innerHTML
+    if(resultado){
+        document.getElementById('appear').innerHTML = eval(resultado)
+    }
 }
 
 /*
