@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <p>Olá! Bem Vindo(a)!</p>
+        <p><strong>Projeto calculadora!</strong></p>
+    </header>
+    <section>
+        <div>
+            <div class="conteudoVisor">
+                <div class="visor" id="appear">
+                    <!-- Aqui vai aparecer o resultado -->
+                </div>
+            </div>
+            <div class="col1">
+                <input type="button" id="txtClean" value="C" onclick="limpar()">
+                <input type="button" id="txtBack" value="⬅" onclick="limpar()">
+                <input type="button" id="txtn9" value="/" onclick="insert('/')">
+                <input type="button" id="txtMult" value="*" onclick="insert('x')">
+            </div>
+            <div class="col2">
+                <input type="button" id="txtn7" value="7" onclick="insert('7')">
+                <input type="button" id="txtn8" value="8" onclick="insert('8')">
+                <input type="button" id="txtn9" value="9" onclick="insert('9')">
+                <input type="button" id="txtSub" value="-" onclick="insert('-')">
+            </div>
+            <div class="col3">
+                <input type="button" id="txtn4" value="4" onclick="insert('4')">
+                <input type="button" id="txtn5" value="5" onclick="insert('5')">
+                <input type="button" id="txtn6" value="6" onclick="insert('6')">
+                <input class="botao2" type="button" id="txtSoma" value="+" onclick="insert('+')">
+                
+            </div>
+            <div class="col4">
+                <input type="button" id="txtn1" value="1" onclick="insert('1')">
+                <input type="button" id="txtn2" value="2" onclick="insert('2')">
+                <input type="button" id="txtn3" value="3" onclick="insert('3')">
+            </div>
+            <div class="col5">
+                <input class="botao3" type="button" id="txtn0" value="0" onclick="insert('0')">
+                <input type="button" id="txtPonto" value="." onclick="insert('.')">
+                <input type="button" id="txtCalcular" value="=" class="igual" onclick="calcular()">
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; PabloHenrique</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
