@@ -8,3 +8,8 @@ Em resumo, foi um projeto feito com o objetivo de colocar em prática o <strong>
 <br>
 
 Espero que vocês gostem!🤗
+
+# Preview
+<p align="center">
+  <img width="500px" src="/calculadora.png">
+</p>
